@@ -2,19 +2,19 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'spree_paypal_express/version'
+require 'spree_touch_payments/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_paypal_express'
-  s.version     = SpreePayPalExpress::VERSION
-  s.summary     = 'Adds PayPal Express as a Payment Method to Spree Commerce'
+  s.name        = 'spree_touch_payments'
+  s.version     = SpreeTouchPayments::VERSION
+  s.summary     = 'Adds Touch Payments as a Payment Method to Spree Commerce'
   s.description = s.summary
   s.required_ruby_version = '>= 2.1.0'
 
-  s.author       = 'Spree Commerce'
-  s.email        = 'gems@spreecommerce.com'
-  s.homepage     = 'http://www.spreecommerce.com'
+  s.author       = 'Dominic Lovell'
+  s.email        = 'hi@368degrees.com'
+  s.homepage     = 'http://www.touchpayments.com.au'
   s.license      = %q{BSD-3}
 
   s.files        = `git ls-files`.split("\n")
@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 3.0.0.rc'
-  s.add_dependency 'paypal-sdk-merchant', '1.106.1'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
